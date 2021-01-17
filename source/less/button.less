@@ -11,8 +11,16 @@
 }
 .button--diet{
   display: block;
-  margin: 0 auto;
   margin-bottom: 22px;
+  @media @tablet{
+    position: absolute;
+    top: 230px;
+    left: 83px;
+    z-index: 3;
+  }
+  @media @desktop{
+    position: relative;
+  }
 }
 .button--all-goods{
   background-color: @basic_color;

@@ -1,16 +1,49 @@
+.navigation__shell{
+  @media @tablet{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  @media @desktop{}
+}
+.navigation__wrapper{
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media @tablet{
+    width: @tablet-width;
+    padding: 0 30px;
+  }
+  @media @desktop{
+    width: @desktop-width;
+    padding: 0 40px;
+  }
+}
 .navigation__block-icons {
-  .center;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 66px;
+  @media @tablet{
+    align-items: flex-end;
+    height: 76px;
+    width: 174px;
+  }
+  @media @desktop{
+    height: 112px;
+    width: 202px;
+  }
 }
+
 .navigation__burger {
-    display: block;
-    position: relative;
-    width: 24px;
-    height: 16px;
-    z-index: 3;
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 16px;
+  z-index: 3;
+  @media @tablet{
+    display: none;
+  }
 }
 .navigation__burger span{
   position: absolute;
